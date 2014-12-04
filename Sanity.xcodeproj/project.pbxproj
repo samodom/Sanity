@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0A9EBBAB195F359100C62D38 /* Sanity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EBBAA195F359100C62D38 /* Sanity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9EBBA5195F359100C62D38 /* Sanity.framework */; };
+		0AE35C521A2FDC0200EC2419 /* GenericSanityChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE35C511A2FDC0200EC2419 /* GenericSanityChecksTests.swift */; };
+		0AE35C541A3010FF00EC2419 /* SanityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE35C531A3010FF00EC2419 /* SanityCheck.swift */; };
+		0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE35C561A30122100EC2419 /* XCTest.framework */; };
+		0AE35C581A30147E00EC2419 /* SanityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE35C531A3010FF00EC2419 /* SanityCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,9 @@
 		0A9EBBAA195F359100C62D38 /* Sanity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sanity.h; sourceTree = "<group>"; };
 		0A9EBBB0195F359100C62D38 /* SanityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9EBBB6195F359100C62D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE35C511A2FDC0200EC2419 /* GenericSanityChecksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericSanityChecksTests.swift; sourceTree = "<group>"; };
+		0AE35C531A3010FF00EC2419 /* SanityCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheck.swift; sourceTree = "<group>"; };
+		0AE35C561A30122100EC2419 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCTest.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +59,10 @@
 		0A9EBB9B195F359100C62D38 = {
 			isa = PBXGroup;
 			children = (
+				0A9EBBA6195F359100C62D38 /* Products */,
 				0A9EBBA7195F359100C62D38 /* Sanity */,
 				0A9EBBB4195F359100C62D38 /* SanityTests */,
-				0A9EBBA6195F359100C62D38 /* Products */,
+				0AE35C561A30122100EC2419 /* XCTest.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9EBBAA195F359100C62D38 /* Sanity.h */,
+				0AE35C531A3010FF00EC2419 /* SanityCheck.swift */,
 				0A9EBBA8195F359100C62D38 /* Supporting Files */,
 			);
 			path = Sanity;
@@ -87,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				0A9EBBB5195F359100C62D38 /* Supporting Files */,
+				0AE35C4F1A2FDBEB00EC2419 /* Tests */,
+				0AE35C501A2FDBEB00EC2419 /* Tools */,
 			);
 			path = SanityTests;
 			sourceTree = "<group>";
@@ -97,6 +109,21 @@
 				0A9EBBB6195F359100C62D38 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AE35C4F1A2FDBEB00EC2419 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0AE35C511A2FDC0200EC2419 /* GenericSanityChecksTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0AE35C501A2FDBEB00EC2419 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE35C541A3010FF00EC2419 /* SanityCheck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE35C581A30147E00EC2419 /* SanityCheck.swift in Sources */,
+				0AE35C521A2FDC0200EC2419 /* GenericSanityChecksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
