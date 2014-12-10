@@ -11,6 +11,8 @@
 		0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */; };
 		0A9EBBAB195F359100C62D38 /* Sanity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EBBAA195F359100C62D38 /* Sanity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9EBBA5195F359100C62D38 /* Sanity.framework */; };
+		0AD6F2741A352B2200D863A2 /* UIKitSwagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */; };
+		0AD6F2751A352B2600D863A2 /* UIKitSwagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */; };
 		0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE35C561A30122100EC2419 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD6F2741A352B2200D863A2 /* UIKitSwagger.framework in Frameworks */,
 				0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD6F2751A352B2600D863A2 /* UIKitSwagger.framework in Frameworks */,
 				0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +116,8 @@
 		0AE35C4F1A2FDBEB00EC2419 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */,
+				0AEE86041A36837500C52264 /* ObjectAssociationTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -411,6 +418,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SanityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
