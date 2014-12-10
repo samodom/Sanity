@@ -55,6 +55,9 @@
                <Test
                   Identifier = "SanityCheck">
                </Test>
+               <Test
+                  Identifier = "SanityCheckTestCase">
+               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>
