@@ -44,7 +44,7 @@ class AspectRatioChecksTests: SanityCheckTestCase {
         CheckConstrainedToSquare(dimensionOffsetView, "The image should be constrained to a square")
 
         XCTAssertEqual(sanityCheckFailures.count, 3, "There should be three failing sanity checks")
-        for index in 0..<sanityCheckFailures.count {
+        for index in 0  ..< sanityCheckFailures.count {
             let failure = sanityCheckFailures[index]
             if index == 2 {
                 XCTAssertEqual(failure.description, "The image should be constrained to a square", "The provided message should be used in the failure")
@@ -77,7 +77,7 @@ class AspectRatioChecksTests: SanityCheckTestCase {
         CheckConstrainedToAspectRatio(dimensionOffsetView, ratio: 2.5, "The image should be constrained to an aspect ratio of 5:2")
 
         XCTAssertEqual(sanityCheckFailures.count, 3, "There should be three failing sanity checks")
-        for index in 0..<sanityCheckFailures.count {
+        for index in 0 ..< sanityCheckFailures.count {
             let failure = sanityCheckFailures[index]
             if index == 2 {
                 XCTAssertEqual(failure.description, "The image should be constrained to an aspect ratio of 5:2", "The provided message should be used in the failure")
@@ -95,7 +95,9 @@ class AspectRatioChecksTests: SanityCheckTestCase {
     func testPassingAspectRatioConstraintsCheck() {
         CheckConstrainedToAspectRatio(squareView1)
         CheckConstrainedToAspectRatio(squareView2, ratio: 1)
-        CheckConstrainedToAspectRatio(aspectRatioView, ratio: 2.5)
+        CheckConstrainedToAspectRatio(aspectRatioView, ratio: 2.5, "The image should be constrained to an aspect ratio of 5:2")
+
+        XCTAssertEqual(sanityCheckFailures.count, 0, "There should be no failing sanity checks")
     }
 
     func testFailingOffsetAspectRatioConstraintsCheck() {
@@ -109,7 +111,7 @@ class AspectRatioChecksTests: SanityCheckTestCase {
         CheckConstrainedToAspectRatio(dimensionOffsetView, ratio: 2.5, offset: 10, "The image should be constrained to an aspect ratio of 5:2 with an additional 10 pt offset")
 
         XCTAssertEqual(sanityCheckFailures.count, 3, "There should be three failing sanity checks")
-        for index in 0..<sanityCheckFailures.count {
+        for index in 0 ..< sanityCheckFailures.count {
             let failure = sanityCheckFailures[index]
             if index == 2 {
                 XCTAssertEqual(failure.description, "The image should be constrained to an aspect ratio of 5:2 with an additional 10 pt offset", "The provided message should be used in the failure")
@@ -126,7 +128,9 @@ class AspectRatioChecksTests: SanityCheckTestCase {
 
     func testPassingOffsetAspectRatioConstraintsCheck() {
         CheckConstrainedToAspectRatio(squareView2, ratio: 1, offset: 0)
-        CheckConstrainedToAspectRatio(offsetAspectRatioView, ratio: 2.5, offset: 10)
+        CheckConstrainedToAspectRatio(offsetAspectRatioView, ratio: 2.5, offset: 10, "The image should be constrained to an aspect ratio of 5:2 with an additional 10 pt offset")
+
+        XCTAssertEqual(sanityCheckFailures.count, 0, "There should be no failing sanity checks")
     }
 
     func testFailingDimensionOffsetConstraintsCheck() {
@@ -140,7 +144,7 @@ class AspectRatioChecksTests: SanityCheckTestCase {
         CheckConstrainedToAspectRatio(offsetAspectRatioView, offset: 10, "The image's width should be 10 pt greater than its height")
 
         XCTAssertEqual(sanityCheckFailures.count, 3, "There should be three failing sanity checks")
-        for index in 0..<sanityCheckFailures.count {
+        for index in 0 ..< sanityCheckFailures.count {
             let failure = sanityCheckFailures[index]
             if index == 2 {
                 XCTAssertEqual(failure.description, "The image's width should be 10 pt greater than its height", "The provided message should be used in the failure")
@@ -157,7 +161,9 @@ class AspectRatioChecksTests: SanityCheckTestCase {
 
     func testPassingDimensionOffsetConstraintsCheck() {
         CheckConstrainedToAspectRatio(squareView1, offset: 0)
-        CheckConstrainedToAspectRatio(dimensionOffsetView, offset: 10)
+        CheckConstrainedToAspectRatio(dimensionOffsetView, offset: 10, "The image's width should be 10 pt greater than its height")
+
+        XCTAssertEqual(sanityCheckFailures.count, 0, "There should be no failing sanity checks")
     }
 
 }
