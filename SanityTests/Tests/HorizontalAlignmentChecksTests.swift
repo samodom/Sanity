@@ -206,7 +206,6 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
 
         assessExpectedSanityCheckFailuresWithDefaultMessage(message: "The two views should be aligned by their center X attributes")
         XCTAssertEqual(sanityCheckFailures.count, 4, "There should be four total sanity check failures")
-
     }
 
     func testPassingCenterXAlignmentChecks() {

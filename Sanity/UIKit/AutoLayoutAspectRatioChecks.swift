@@ -39,7 +39,7 @@ public extension XCTestCase {
     }
 
     /**
-    Sanity Check: Is my view constrained to a particular aspect ratio plus an offset?  Is its width a constant amount greater or lesser than its height?
+      Sanity Check: Is my view constrained to a particular aspect ratio plus an offset?  Is its width a constant amount greater or lesser than its height?
       @param            view View to check for aspect ratio constraint.
       @param            ratio Expected width-to-height ratio.
       @param            offset Expected offset to the constrained aspect ratio.
