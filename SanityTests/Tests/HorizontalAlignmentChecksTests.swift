@@ -44,30 +44,14 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         AlignTrailing(subview1, subview2)
         nextLineIsSanityCheckFailure()
         CheckLeadingAlignment(subview1, subview2, "The subviews should be leading-aligned with one another")
+        expectCustomFailureMessage("The subviews should be leading-aligned with one another")
 
         superview.clearConstraints()
         nextLineIsSanityCheckFailure()
         CheckLeadingAlignment(subview1, unrelated)
+        expectCustomFailureMessage(DefaultUnrelatedViewsMessage)
 
-        XCTAssertEqual(sanityCheckFailures.count, 4, "There should be four total sanity check failures")
-        for index in 0 ..< sanityCheckFailures.count {
-            let failure = sanityCheckFailures[index]
-            switch index {
-            case 2:
-                XCTAssertEqual(failure.description, "The subviews should be leading-aligned with one another", "The provided message should be used in the failure")
-
-            case 3:
-                XCTAssertEqual(failure.description, "The provided views are unrelated", "The message should express the inability to check constraints due to the views not sharing the same hierarchy")
-
-            default:
-                XCTAssertEqual(failure.description, "The two views should be aligned by their leading attributes", "A general description should be reported")
-            }
-
-            XCTAssertEqual(failure.filePath, __FILE__, "The calling file should be used")
-            let lineNumber = sanityCheckLineNumbers[index]
-            XCTAssertEqual(failure.lineNumber, sanityCheckLineNumbers[index], "The calling line number should be used")
-            XCTAssertTrue(failure.expected, "The failure should be expected as it is a failed assertion")
-        }
+        assessExpectedSanityCheckFailuresWithDefaultMessage(message: "The two views should be aligned by their leading attributes")
     }
 
     func testPassingLeadingAlignmentChecks() {
@@ -99,30 +83,14 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         AlignLeading(subview1, subview2)
         nextLineIsSanityCheckFailure()
         CheckTrailingAlignment(subview1, subview2, "The subviews should be trailing-aligned with one another")
+        expectCustomFailureMessage("The subviews should be trailing-aligned with one another")
 
         superview.clearConstraints()
         nextLineIsSanityCheckFailure()
         CheckTrailingAlignment(subview1, unrelated)
+        expectCustomFailureMessage(DefaultUnrelatedViewsMessage)
 
-        XCTAssertEqual(sanityCheckFailures.count, 4, "There should be four total sanity check failures")
-        for index in 0 ..< sanityCheckFailures.count {
-            let failure = sanityCheckFailures[index]
-            switch index {
-            case 2:
-                XCTAssertEqual(failure.description, "The subviews should be trailing-aligned with one another", "The provided message should be used in the failure")
-
-            case 3:
-                XCTAssertEqual(failure.description, "The provided views are unrelated", "The message should express the inability to check constraints due to the views not sharing the same hierarchy")
-
-            default:
-                XCTAssertEqual(failure.description, "The two views should be aligned by their trailing attributes", "A general description should be reported")
-            }
-
-            XCTAssertEqual(failure.filePath, __FILE__, "The calling file should be used")
-            let lineNumber = sanityCheckLineNumbers[index]
-            XCTAssertEqual(failure.lineNumber, sanityCheckLineNumbers[index], "The calling line number should be used")
-            XCTAssertTrue(failure.expected, "The failure should be expected as it is a failed assertion")
-        }
+        assessExpectedSanityCheckFailuresWithDefaultMessage(message: "The two views should be aligned by their trailing attributes")
     }
 
     func testPassingTrailingAlignmentChecks() {
@@ -154,30 +122,14 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         AlignRight(subview1, subview2)
         nextLineIsSanityCheckFailure()
         CheckLeftAlignment(subview1, subview2, "The subviews should be left-aligned with one another")
+        expectCustomFailureMessage("The subviews should be left-aligned with one another")
 
         superview.clearConstraints()
         nextLineIsSanityCheckFailure()
         CheckLeftAlignment(subview1, unrelated)
+        expectCustomFailureMessage(DefaultUnrelatedViewsMessage)
 
-        XCTAssertEqual(sanityCheckFailures.count, 4, "There should be four total sanity check failures")
-        for index in 0 ..< sanityCheckFailures.count {
-            let failure = sanityCheckFailures[index]
-            switch index {
-            case 2:
-                XCTAssertEqual(failure.description, "The subviews should be left-aligned with one another", "The provided message should be used in the failure")
-
-            case 3:
-                XCTAssertEqual(failure.description, "The provided views are unrelated", "The message should express the inability to check constraints due to the views not sharing the same hierarchy")
-
-            default:
-                XCTAssertEqual(failure.description, "The two views should be aligned by their left attributes", "A general description should be reported")
-            }
-
-            XCTAssertEqual(failure.filePath, __FILE__, "The calling file should be used")
-            let lineNumber = sanityCheckLineNumbers[index]
-            XCTAssertEqual(failure.lineNumber, sanityCheckLineNumbers[index], "The calling line number should be used")
-            XCTAssertTrue(failure.expected, "The failure should be expected as it is a failed assertion")
-        }
+        assessExpectedSanityCheckFailuresWithDefaultMessage(message: "The two views should be aligned by their left attributes")
     }
 
     func testPassingLeftAlignmentChecks() {
@@ -209,30 +161,14 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         AlignLeft(subview1, subview2)
         nextLineIsSanityCheckFailure()
         CheckRightAlignment(subview1, subview2, "The subviews should be right-aligned with one another")
+        expectCustomFailureMessage("The subviews should be right-aligned with one another")
 
         superview.clearConstraints()
         nextLineIsSanityCheckFailure()
         CheckRightAlignment(subview1, unrelated)
+        expectCustomFailureMessage(DefaultUnrelatedViewsMessage)
 
-        XCTAssertEqual(sanityCheckFailures.count, 4, "There should be four total sanity check failures")
-        for index in 0 ..< sanityCheckFailures.count {
-            let failure = sanityCheckFailures[index]
-            switch index {
-            case 2:
-                XCTAssertEqual(failure.description, "The subviews should be right-aligned with one another", "The provided message should be used in the failure")
-
-            case 3:
-                XCTAssertEqual(failure.description, "The provided views are unrelated", "The message should express the inability to check constraints due to the views not sharing the same hierarchy")
-
-            default:
-                XCTAssertEqual(failure.description, "The two views should be aligned by their right attributes", "A general description should be reported")
-            }
-
-            XCTAssertEqual(failure.filePath, __FILE__, "The calling file should be used")
-            let lineNumber = sanityCheckLineNumbers[index]
-            XCTAssertEqual(failure.lineNumber, sanityCheckLineNumbers[index], "The calling line number should be used")
-            XCTAssertTrue(failure.expected, "The failure should be expected as it is a failed assertion")
-        }
+        assessExpectedSanityCheckFailuresWithDefaultMessage(message: "The two views should be aligned by their right attributes")
     }
 
     func testPassingRightAlignmentChecks() {
@@ -261,30 +197,16 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         superview.clearConstraints()
         nextLineIsSanityCheckFailure()
         CheckHorizontalAlignment(subview1, subview2, "The subviews should be horizontally center-aligned with one another")
+        expectCustomFailureMessage("The subviews should be horizontally center-aligned with one another")
 
         superview.clearConstraints()
         nextLineIsSanityCheckFailure()
         CheckHorizontalAlignment(subview1, unrelated)
+        expectCustomFailureMessage(DefaultUnrelatedViewsMessage)
 
+        assessExpectedSanityCheckFailuresWithDefaultMessage(message: "The two views should be aligned by their center X attributes")
         XCTAssertEqual(sanityCheckFailures.count, 4, "There should be four total sanity check failures")
-        for index in 0 ..< sanityCheckFailures.count {
-            let failure = sanityCheckFailures[index]
-            switch index {
-            case 2:
-                XCTAssertEqual(failure.description, "The subviews should be horizontally center-aligned with one another", "The provided message should be used in the failure")
 
-            case 3:
-                XCTAssertEqual(failure.description, "The provided views are unrelated", "The message should express the inability to check constraints due to the views not sharing the same hierarchy")
-
-            default:
-                XCTAssertEqual(failure.description, "The two views should be aligned by their center X attributes", "A general description should be reported")
-            }
-
-            XCTAssertEqual(failure.filePath, __FILE__, "The calling file should be used")
-            let lineNumber = sanityCheckLineNumbers[index]
-            XCTAssertEqual(failure.lineNumber, sanityCheckLineNumbers[index], "The calling line number should be used")
-            XCTAssertTrue(failure.expected, "The failure should be expected as it is a failed assertion")
-        }
     }
 
     func testPassingCenterXAlignmentChecks() {
