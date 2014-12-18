@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4B37211A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
+		0A4B37221A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
+		0A4B37241A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */; };
+		0A4B37251A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */; };
 		0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */; };
 		0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */; };
 		0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */; };
@@ -32,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailureReportParameters.swift; sourceTree = "<group>"; };
+		0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureReporting.swift; sourceTree = "<group>"; };
 		0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailure.swift; sourceTree = "<group>"; };
 		0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckTestCase.swift; sourceTree = "<group>"; };
 		0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectRatioChecksTests.swift; sourceTree = "<group>"; };
@@ -67,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4B371F1A415C0E0088CD58 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */,
+				0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		0A95FA1B1A301C1A00B8FDEF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +113,7 @@
 		0A9EBBA7195F359100C62D38 /* Sanity */ = {
 			isa = PBXGroup;
 			children = (
+				0A4B371F1A415C0E0088CD58 /* Common */,
 				0A9EBBAA195F359100C62D38 /* Sanity.h */,
 				0A9EBBA8195F359100C62D38 /* Supporting Files */,
 				0A95FA1B1A301C1A00B8FDEF /* UIKit */,
@@ -256,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4B37241A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
 				0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */,
 				0A95FA221A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */,
+				0A4B37211A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */,
+				0A4B37251A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
+				0A4B37221A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */,
 				0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */,
 				0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */,
 				0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */,
