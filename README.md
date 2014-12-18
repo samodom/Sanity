@@ -14,8 +14,13 @@ Swift-based testing tools for iOS
 **Dimensions**
  - CheckConstrainedToSquare
  - CheckConstrainedToAspectRatio (with or without offset or ratio)
+
+**Alignment**
  - CheckLeadingAlignment
  - CheckTrailingAlignment
  - CheckLeftAlignment
  - CheckRightAlignment
+ - CheckTopAlignment
+ - CheckBottomAlignment
  - CheckHorizontalAlignment
+ - CheckVerticalAlignment

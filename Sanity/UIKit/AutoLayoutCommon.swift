@@ -53,5 +53,8 @@ private let MessageNamesForAttributes: [NSLayoutAttribute:String] = [
     .Trailing: "trailing",
     .Left: "left",
     .Right: "right",
-    .CenterX: "center X"
+    .Top: "top",
+    .Bottom: "bottom",
+    .CenterX: "center X",
+    .CenterY: "center Y"
 ]

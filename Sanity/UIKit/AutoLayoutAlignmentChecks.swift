@@ -102,4 +102,58 @@ public extension XCTestCase {
         CheckViewAlignment(view1.centerX, view2.centerX, reportParameters: reportParameters)
     }
 
+    /**
+      Sanity Check: Are my views top-edge aligned?
+      @param            view1 View to check for top-edge alignment.
+      @param            view2 View to check for top-edge alignment.
+      @param            message (Optional) Custom message to report with test failure.  Suitable default provided.
+      @param            file (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
+      @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
+      @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the top edges of the views.
+    */
+    public func CheckTopAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+        let reportParameters = SanityCheckFailureReportParameters(message, file, line)
+        if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
+            return
+        }
+
+        CheckViewAlignment(view1.top, view2.top, reportParameters: reportParameters)
+    }
+
+    /**
+      Sanity Check: Are my views bottom-edge aligned?
+      @param            view1 View to check for bottom-edge alignment.
+      @param            view2 View to check for bottom-edge alignment.
+      @param            message (Optional) Custom message to report with test failure.  Suitable default provided.
+      @param            file (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
+      @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
+      @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the bottom edges of the views.
+    */
+    public func CheckBottomAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+        let reportParameters = SanityCheckFailureReportParameters(message, file, line)
+        if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
+            return
+        }
+
+        CheckViewAlignment(view1.bottom, view2.bottom, reportParameters: reportParameters)
+    }
+
+    /**
+      Sanity Check: Are my views vertically aligned?
+      @param            view1 View to check for vertical alignment.
+      @param            view2 View to check for vertical alignment.
+      @param            message (Optional) Custom message to report with test failure.  Suitable default provided.
+      @param            file (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
+      @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
+      @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the vertical centers of the views.
+    */
+    public func CheckVerticalAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+        let reportParameters = SanityCheckFailureReportParameters(message, file, line)
+        if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
+            return
+        }
+
+        CheckViewAlignment(view1.centerY, view2.centerY, reportParameters: reportParameters)
+    }
+
 }

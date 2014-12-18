@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A17930C1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17930B1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift */; };
 		0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37211A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A17930B1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentChecksTests.swift; sourceTree = "<group>"; };
 		0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutCommon.swift; sourceTree = "<group>"; };
 		0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailureReportParameters.swift; sourceTree = "<group>"; };
 		0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureReporting.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */,
 				0A7000CF1A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift */,
+				0A17930B1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				0ACADAE01A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */,
 				0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */,
 				0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */,
+				0A17930C1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift in Sources */,
 				0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
