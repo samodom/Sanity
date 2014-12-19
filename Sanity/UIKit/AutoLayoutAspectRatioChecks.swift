@@ -21,7 +21,8 @@ public extension XCTestCase {
       @discussion       This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to be equal.
     */
     public func CheckConstrainedToSquare(view: UIView, _ message: String = DefaultCheckSquareConstraintMessage, file: String = __FILE__, line: UInt = __LINE__) {
-        CheckWidthToHeightConstraint(view, widthToHeightRatio: 1, widthToHeightOffset: 0, message: message, file: file, line: line)
+        let reportParameters = SanityCheckFailureReportParameters(message, file, line)
+        CheckWidthToHeightConstraint(view, widthToHeightRatio: 1, widthToHeightOffset: 0, reportParameters: reportParameters)
     }
 
     /**
@@ -38,7 +39,7 @@ public extension XCTestCase {
     }
 
     /**
-    Sanity Check: Is my view constrained to a particular aspect ratio plus an offset?  Is its width a constant amount greater or lesser than its height?
+      Sanity Check: Is my view constrained to a particular aspect ratio plus an offset?  Is its width a constant amount greater or lesser than its height?
       @param            view View to check for aspect ratio constraint.
       @param            ratio Expected width-to-height ratio.
       @param            offset Expected offset to the constrained aspect ratio.
@@ -52,7 +53,8 @@ public extension XCTestCase {
             message = defaultCheckAspectRatioConstraintMessage(ratio: widthToHeightRatio, offset: widthToHeightOffset)
         }
 
-        CheckWidthToHeightConstraint(view, widthToHeightRatio: widthToHeightRatio, widthToHeightOffset: widthToHeightOffset, message: message, file: file, line: line)
+        let reportParameters = SanityCheckFailureReportParameters(message, file, line)
+        CheckWidthToHeightConstraint(view, widthToHeightRatio: widthToHeightRatio, widthToHeightOffset: widthToHeightOffset, reportParameters: reportParameters)
     }
 
 }
@@ -80,10 +82,10 @@ private extension XCTestCase {
         return message
     }
 
-    private func CheckWidthToHeightConstraint(view: UIView, widthToHeightRatio: CGFloat, widthToHeightOffset: CGFloat, message: String, file: String, line: UInt) {
+    private func CheckWidthToHeightConstraint(view: UIView, widthToHeightRatio: CGFloat, widthToHeightOffset: CGFloat, reportParameters: SanityCheckFailureReportParameters) {
         let constraint = view.width =* widthToHeightRatio * view.height + widthToHeightOffset
-        if !contains(view.constraints() as [Constraint], constraint) {
-            recordFailureWithDescription(message, inFile: file, atLine: line, expected: true)
+        if !view.hasConstraint(constraint) {
+            recordSanityCheckFailure(reportParameters)
         }
     }
 
