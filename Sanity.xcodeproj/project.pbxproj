@@ -22,8 +22,6 @@
 		0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */; };
 		0A9EBBAB195F359100C62D38 /* Sanity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EBBAA195F359100C62D38 /* Sanity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9EBBA5195F359100C62D38 /* Sanity.framework */; };
-		0AD6F2741A352B2200D863A2 /* UIKitSwagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */; };
-		0AD6F2751A352B2600D863A2 /* UIKitSwagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */; };
 		0ACADADF1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADADE1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift */; };
 		0ACADAE01A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADADE1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift */; };
 		0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
@@ -66,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD6F2741A352B2200D863A2 /* UIKitSwagger.framework in Frameworks */,
 				0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD6F2751A352B2600D863A2 /* UIKitSwagger.framework in Frameworks */,
 				0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
