@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GoodViewController: UIViewController {
+internal class GoodViewController: UIViewController {
 
     internal override func loadView() {
         view = UIView()

@@ -14,6 +14,7 @@
 		0A3E95A91AB60C5800AF2164 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E95A71AB60C5800AF2164 /* LaunchScreen.xib */; };
 		0A3E95BD1AB60CDA00AF2164 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95BC1AB60CDA00AF2164 /* GoodViewController.swift */; };
 		0A3E95BF1AB60CE700AF2164 /* BadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95BE1AB60CE700AF2164 /* BadViewController.swift */; };
+		0A3E95C11AB60DFA00AF2164 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95C01AB60DFA00AF2164 /* EmptyViewController.swift */; };
 		0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37211A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
@@ -59,6 +60,7 @@
 		0A3E95B41AB60C5800AF2164 /* TestableAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableAppTests.swift; sourceTree = "<group>"; };
 		0A3E95BC1AB60CDA00AF2164 /* GoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
 		0A3E95BE1AB60CE700AF2164 /* BadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadViewController.swift; sourceTree = "<group>"; };
+		0A3E95C01AB60DFA00AF2164 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutCommon.swift; sourceTree = "<group>"; };
 		0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailureReportParameters.swift; sourceTree = "<group>"; };
 		0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureReporting.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				0A3E959E1AB60C5800AF2164 /* AppDelegate.swift */,
 				0A3E95BE1AB60CE700AF2164 /* BadViewController.swift */,
+				0A3E95C01AB60DFA00AF2164 /* EmptyViewController.swift */,
 				0A3E95BC1AB60CDA00AF2164 /* GoodViewController.swift */,
 				0A3E95A51AB60C5800AF2164 /* Images.xcassets */,
 				0A3E95A71AB60C5800AF2164 /* LaunchScreen.xib */,
@@ -506,6 +509,7 @@
 			files = (
 				0A3E959F1AB60C5800AF2164 /* AppDelegate.swift in Sources */,
 				0A3E95BF1AB60CE700AF2164 /* BadViewController.swift in Sources */,
+				0A3E95C11AB60DFA00AF2164 /* EmptyViewController.swift in Sources */,
 				0A3E95BD1AB60CDA00AF2164 /* GoodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BadViewController: UIViewController {
+internal class BadViewController: UIViewController {
 
     internal override func loadView() {
         super.loadView()
