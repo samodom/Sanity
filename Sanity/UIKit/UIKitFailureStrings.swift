@@ -8,12 +8,9 @@
 
 import Foundation
 
-//  MARK: Common messages
+//  MARK: Auto Layout
 
 internal let DefaultUnrelatedViewsMessage = "The provided views are unrelated"
-
-
-//  MARK: Aspect ratio messages
 
 internal let DefaultCheckSquareConstraintMessage = "The view's aspect ratio should be constrained to a square"
 internal let DefaultCheckAspectRatioConstraintMessageTokens =
@@ -23,8 +20,6 @@ internal let DefaultCheckAspectRatioConstraintMessageTokens =
     offsetToken: " plus an offset of ",
     endToken: " pt")
 
-
-//  MARK: Alignment messages
-
 internal let DefaultCheckAlignmentConstraintMessageTokens =
-(startToken: "The two views should be aligned by their ", endToken: " attributes")
+(startToken: "The two views should be aligned by their ",
+    endToken: " attributes")

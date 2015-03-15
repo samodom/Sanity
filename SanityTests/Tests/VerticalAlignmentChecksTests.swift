@@ -6,7 +6,6 @@
 //  Copybottom (c) 2014 Sam Odom. All bottoms reserved.
 //
 
-import UIKit
 import UIKitSwagger
 import XCTest
 

@@ -40,12 +40,12 @@ internal extension XCTestCase {
         }
     }
 
-    private func defaultCheckAlignmentConstraintMessageWithAttribute(attribute: NSLayoutAttribute) -> String {
-        let attributeName = MessageNamesForAttributes[attribute]
-        assert(attributeName != nil, "There should be a message name defined for the layout attribute")
-        return DefaultCheckAlignmentConstraintMessageTokens.startToken + attributeName! + DefaultCheckAlignmentConstraintMessageTokens.endToken
-    }
+}
 
+private func defaultCheckAlignmentConstraintMessageWithAttribute(attribute: NSLayoutAttribute) -> String {
+    let attributeName = MessageNamesForAttributes[attribute]
+    assert(attributeName != nil, "There should be a message name defined for the layout attribute")
+    return DefaultCheckAlignmentConstraintMessageTokens.startToken + attributeName! + DefaultCheckAlignmentConstraintMessageTokens.endToken
 }
 
 private let MessageNamesForAttributes: [NSLayoutAttribute:String] = [
