@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		0A17930C1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17930B1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift */; };
 		0A3E959F1AB60C5800AF2164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E959E1AB60C5800AF2164 /* AppDelegate.swift */; };
-		0A3E95A11AB60C5800AF2164 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95A01AB60C5800AF2164 /* ViewController.swift */; };
 		0A3E95A41AB60C5800AF2164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E95A21AB60C5800AF2164 /* Main.storyboard */; };
 		0A3E95A61AB60C5800AF2164 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E95A51AB60C5800AF2164 /* Images.xcassets */; };
 		0A3E95A91AB60C5800AF2164 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E95A71AB60C5800AF2164 /* LaunchScreen.xib */; };
+		0A3E95BD1AB60CDA00AF2164 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95BC1AB60CDA00AF2164 /* GoodViewController.swift */; };
+		0A3E95BF1AB60CE700AF2164 /* BadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95BE1AB60CE700AF2164 /* BadViewController.swift */; };
 		0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37211A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
@@ -51,12 +52,13 @@
 		0A3E959A1AB60C5800AF2164 /* TestableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3E959D1AB60C5800AF2164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3E959E1AB60C5800AF2164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A3E95A01AB60C5800AF2164 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A3E95A31AB60C5800AF2164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A3E95A51AB60C5800AF2164 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A3E95A81AB60C5800AF2164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0A3E95B31AB60C5800AF2164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3E95B41AB60C5800AF2164 /* TestableAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableAppTests.swift; sourceTree = "<group>"; };
+		0A3E95BC1AB60CDA00AF2164 /* GoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
+		0A3E95BE1AB60CE700AF2164 /* BadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadViewController.swift; sourceTree = "<group>"; };
 		0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutCommon.swift; sourceTree = "<group>"; };
 		0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailureReportParameters.swift; sourceTree = "<group>"; };
 		0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureReporting.swift; sourceTree = "<group>"; };
@@ -119,10 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				0A3E959E1AB60C5800AF2164 /* AppDelegate.swift */,
-				0A3E95A01AB60C5800AF2164 /* ViewController.swift */,
-				0A3E95A21AB60C5800AF2164 /* Main.storyboard */,
+				0A3E95BE1AB60CE700AF2164 /* BadViewController.swift */,
+				0A3E95BC1AB60CDA00AF2164 /* GoodViewController.swift */,
 				0A3E95A51AB60C5800AF2164 /* Images.xcassets */,
 				0A3E95A71AB60C5800AF2164 /* LaunchScreen.xib */,
+				0A3E95A21AB60C5800AF2164 /* Main.storyboard */,
 				0A3E959C1AB60C5800AF2164 /* Supporting Files */,
 			);
 			path = TestableApp;
@@ -176,14 +179,14 @@
 		0A9EBB9B195F359100C62D38 = {
 			isa = PBXGroup;
 			children = (
-				0A3E959B1AB60C5800AF2164 /* TestableApp */,
-				0A3E95B11AB60C5800AF2164 /* TestableAppTests */,
+				0855687310532AC65BD52EC2 /* Frameworks */,
+				E9803BC0A1496D70D6887E6A /* Pods */,
 				0A9EBBA6195F359100C62D38 /* Products */,
 				0A9EBBA7195F359100C62D38 /* Sanity */,
 				0A9EBBB4195F359100C62D38 /* SanityTests */,
+				0A3E959B1AB60C5800AF2164 /* TestableApp */,
+				0A3E95B11AB60C5800AF2164 /* TestableAppTests */,
 				0AE35C561A30122100EC2419 /* XCTest.framework */,
-				E9803BC0A1496D70D6887E6A /* Pods */,
-				0855687310532AC65BD52EC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -501,8 +504,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3E95A11AB60C5800AF2164 /* ViewController.swift in Sources */,
 				0A3E959F1AB60C5800AF2164 /* AppDelegate.swift in Sources */,
+				0A3E95BF1AB60CE700AF2164 /* BadViewController.swift in Sources */,
+				0A3E95BD1AB60CDA00AF2164 /* GoodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
