@@ -26,8 +26,8 @@ internal extension XCTestCase {
     internal func CheckViewAlignment(item1: AutoLayoutAttributedItem, _ item2: AutoLayoutAttributedItem, var reportParameters: SanityCheckFailureReportParameters) {
         assert(item1.attribute == item2.attribute, "The attributes for the items must match")
 
-        let view1 = item1.item as UIView
-        let view2 = item2.item as UIView
+        let view1 = item1.item as! UIView
+        let view2 = item2.item as! UIView
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
         }
