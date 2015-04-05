@@ -6,4 +6,3 @@ use_frameworks!
 
 link_with 'Sanity', 'SanityTests'
     pod 'UIKitSwagger'
-    pod 'TestableUIKit'

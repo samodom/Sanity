@@ -1,13 +1,10 @@
 PODS:
-  - TestableUIKit (0.1.1)
-  - UIKitSwagger (0.6.0)
+  - UIKitSwagger (0.6.1)
 
 DEPENDENCIES:
-  - TestableUIKit
   - UIKitSwagger
 
 SPEC CHECKSUMS:
-  TestableUIKit: ca3cc6b374304b286890491bcc472a99d93de3cd
-  UIKitSwagger: 5dd1a989be8a9141768f74d85bfdaa676d427514
+  UIKitSwagger: 774eb4bd0317852bc9fe476655711e795ddb0235
 
 COCOAPODS: 0.36.0
