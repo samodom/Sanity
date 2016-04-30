@@ -6,17 +6,18 @@
 //  Copyright (c) 2014 Sam Odom. All rights reserved.
 //
 
-import UIKitSwagger
 import XCTest
+import UIKitSwagger
+@testable import Sanity
 
 class HorizontalAlignmentChecksTests: SanityCheckTestCase {
 
     let superview = UIView()
     let anchorView = UIView()
-    let subview1 = UIView()
-    let subview2 = UIView()
+    let subview1 = UIImageView()
+    let subview2 = UIButton()
     let unrelated = UIView()
-    var allConstraints: [Constraint]!
+    var allConstraints: [NSLayoutConstraint]!
 
     override func setUp() {
         super.setUp()
@@ -35,7 +36,7 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         CheckLeadingAlignment(superview, anchorView)
 
         superview.clearConstraints()
-        (subview2.leading =* anchorView.leading + 4).apply()
+        (subview2.leading =* anchorView.leading + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckLeadingAlignment(anchorView, subview2)
 
@@ -74,7 +75,7 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         CheckTrailingAlignment(superview, anchorView)
 
         superview.clearConstraints()
-        (subview2.trailing =* anchorView.trailing + 4).apply()
+        (subview2.trailing =* anchorView.trailing + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckTrailingAlignment(anchorView, subview2)
 
@@ -113,7 +114,7 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         CheckLeftAlignment(superview, anchorView)
 
         superview.clearConstraints()
-        (subview2.left =* anchorView.left + 4).apply()
+        (subview2.left =* anchorView.left + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckLeftAlignment(anchorView, subview2)
 
@@ -152,7 +153,7 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         CheckRightAlignment(superview, anchorView)
 
         superview.clearConstraints()
-        (subview2.right =* anchorView.right + 4).apply()
+        (subview2.right =* anchorView.right + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckRightAlignment(anchorView, subview2)
 
@@ -189,7 +190,7 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
         nextLineIsSanityCheckFailure()
         CheckHorizontalAlignment(superview, anchorView)
 
-        (subview2.centerX =* anchorView.centerX + 4).apply()
+        (subview2.centerX =* anchorView.centerX + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckHorizontalAlignment(anchorView, subview2)
 

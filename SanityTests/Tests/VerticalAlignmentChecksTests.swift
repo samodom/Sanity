@@ -6,17 +6,18 @@
 //  Copybottom (c) 2014 Sam Odom. All bottoms reserved.
 //
 
-import UIKitSwagger
 import XCTest
+import UIKitSwagger
+@testable import Sanity
 
 class VerticalAlignmentChecksTests: SanityCheckTestCase {
 
     let superview = UIView()
     let anchorView = UIView()
-    let subview1 = UIView()
-    let subview2 = UIView()
+    let subview1 = UIImageView()
+    let subview2 = UIButton()
     let unrelated = UIView()
-    var allConstraints: [Constraint]!
+    var allConstraints: [NSLayoutConstraint]!
 
     override func setUp() {
         super.setUp()
@@ -33,7 +34,7 @@ class VerticalAlignmentChecksTests: SanityCheckTestCase {
         nextLineIsSanityCheckFailure()
         CheckTopAlignment(superview, anchorView)
 
-        (subview2.top =* anchorView.top + 4).apply()
+        (subview2.top =* anchorView.top + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckTopAlignment(anchorView, subview2)
 
@@ -71,7 +72,7 @@ class VerticalAlignmentChecksTests: SanityCheckTestCase {
         CheckBottomAlignment(superview, anchorView)
 
         superview.clearConstraints()
-        (subview2.bottom =* anchorView.bottom + 4).apply()
+        (subview2.bottom =* anchorView.bottom + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckBottomAlignment(anchorView, subview2)
 
@@ -108,7 +109,7 @@ class VerticalAlignmentChecksTests: SanityCheckTestCase {
         nextLineIsSanityCheckFailure()
         CheckVerticalAlignment(superview, anchorView)
 
-        (subview2.centerY =* anchorView.centerY + 4).apply()
+        (subview2.centerY =* anchorView.centerY + 4).activate()
         nextLineIsSanityCheckFailure()
         CheckVerticalAlignment(anchorView, subview2)
 

@@ -6,16 +6,17 @@
 //  Copyright (c) 2014 Sam Odom. All rights reserved.
 //
 
-import UIKitSwagger
 import XCTest
+import UIKitSwagger
+import Sanity
 
 class AspectRatioChecksTests: SanityCheckTestCase {
 
     let squareView1 = UIImageView()
-    let squareView2 = UIImageView()
-    let aspectRatioView = UIImageView()
-    let offsetAspectRatioView = UIImageView()
-    let dimensionOffsetView = UIImageView()
+    let squareView2 = UIButton()
+    let aspectRatioView = UILabel()
+    let offsetAspectRatioView = UITextView()
+    let dimensionOffsetView = UIView()
 
     override func setUp() {
         super.setUp()

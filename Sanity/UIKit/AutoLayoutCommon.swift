@@ -7,12 +7,11 @@
 //
 
 import XCTest
-import UIKit
 import UIKitSwagger
 
 internal extension XCTestCase {
 
-    internal func CheckViewsAreRelated(view1: UIView, _ view2: UIView, var reportParameters: SanityCheckFailureReportParameters) -> Bool {
+    internal func CheckViewsAreRelated(view1: UIView, _ view2: UIView, reportParameters: SanityCheckFailureReportParameters) -> Bool {
         let ancestor = view1.firstCommonAncestor(view2)
         if ancestor != nil {
             return true
@@ -23,7 +22,7 @@ internal extension XCTestCase {
         return false
     }
 
-    internal func CheckViewAlignment(item1: AutoLayoutAttributedItem, _ item2: AutoLayoutAttributedItem, var reportParameters: SanityCheckFailureReportParameters) {
+    internal func CheckViewAlignment(item1: AutoLayoutAttributedItem, _ item2: AutoLayoutAttributedItem, reportParameters: SanityCheckFailureReportParameters) {
         assert(item1.attribute == item2.attribute, "The attributes for the items must match")
 
         let view1 = item1.item as! UIView

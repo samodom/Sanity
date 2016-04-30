@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal struct SanityCheckFailureReportParameters {
+internal class SanityCheckFailureReportParameters {
     internal var message: String?
     internal let filePath: String
     internal let lineNumber: UInt

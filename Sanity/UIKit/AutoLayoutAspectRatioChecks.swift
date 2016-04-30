@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 Sam Odom. All rights reserved.
 //
 
-import UIKit
-import UIKitSwagger
 import XCTest
+import UIKitSwagger
 
 public extension XCTestCase {
 
@@ -20,7 +19,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to be equal.
     */
-    public func CheckConstrainedToSquare(view: UIView, _ message: String = DefaultCheckSquareConstraintMessage, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckConstrainedToSquare(view: UIView, _ message: String = DefaultCheckSquareConstraintMessage, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         CheckWidthToHeightConstraint(view, widthToHeightRatio: 1, widthToHeightOffset: 0, reportParameters: reportParameters)
     }
@@ -34,7 +33,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to the specified width-to-height ratio.
     */
-    public func CheckConstrainedToAspectRatio(view: UIView, ratio widthToHeightRatio: CGFloat = 1, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckConstrainedToAspectRatio(view: UIView, ratio widthToHeightRatio: CGFloat = 1, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         CheckConstrainedToAspectRatio(view, ratio: widthToHeightRatio, offset: 0, message, file: file, line: line)
     }
 
@@ -48,12 +47,11 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to the specified width-to-height ratio plus a constant offset.
     */
-    public func CheckConstrainedToAspectRatio(view: UIView, ratio widthToHeightRatio: CGFloat = 1, offset widthToHeightOffset: CGFloat, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
-        if message == nil {
-            message = defaultCheckAspectRatioConstraintMessage(ratio: widthToHeightRatio, offset: widthToHeightOffset)
-        }
+    public func CheckConstrainedToAspectRatio(view: UIView, ratio widthToHeightRatio: CGFloat = 1, offset widthToHeightOffset: CGFloat, _ message: String! = nil, file: String = #file, line: UInt = #line) {
+        let messageToUse = message ??
+            defaultCheckAspectRatioConstraintMessage(ratio: widthToHeightRatio, offset: widthToHeightOffset)
 
-        let reportParameters = SanityCheckFailureReportParameters(message, file, line)
+        let reportParameters = SanityCheckFailureReportParameters(messageToUse, file, line)
         CheckWidthToHeightConstraint(view, widthToHeightRatio: widthToHeightRatio, widthToHeightOffset: widthToHeightOffset, reportParameters: reportParameters)
     }
 
@@ -66,7 +64,7 @@ public extension XCTestCase {
 
 }
 
-private func defaultCheckAspectRatioConstraintMessage(#ratio: CGFloat, #offset: CGFloat) -> String {
+private func defaultCheckAspectRatioConstraintMessage(ratio ratio: CGFloat, offset: CGFloat) -> String {
     let tokens = DefaultCheckAspectRatioConstraintMessageTokens
     var message = tokens.startToken
 

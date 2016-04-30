@@ -13,13 +13,13 @@ internal class SanityCheckTestCase: XCTestCase {
     internal var sanityCheckLineNumbers = [UInt]()
     internal var customFailureExpectations = [CustomSanityCheckFailureExpectation]()
 
-    internal func nextLineIsSanityCheckFailure(fromLine: UInt = __LINE__) {
+    internal func nextLineIsSanityCheckFailure(fromLine: UInt = #line) {
         let lineNumber = fromLine.successor()
         sanityCheckLineNumbers.append(lineNumber)
     }
 
     private func lineNumberIsForSanityCheck(lineNumber: UInt) -> Bool {
-        return contains(sanityCheckLineNumbers, lineNumber)
+        return sanityCheckLineNumbers.contains(lineNumber)
     }
 
     internal func expectCustomFailureMessage(message: String) {
@@ -28,7 +28,7 @@ internal class SanityCheckTestCase: XCTestCase {
         customFailureExpectations.append(expectation)
     }
 
-    internal func assessExpectedSanityCheckFailuresWithDefaultMessage(message defaultMessage: String, filePath: String = __FILE__) {
+    internal func assessExpectedSanityCheckFailuresWithDefaultMessage(message defaultMessage: String, filePath: String = #file) {
         let expectedFailureCount = sanityCheckLineNumbers.count
         XCTAssertEqual(sanityCheckFailures.count, expectedFailureCount, "There should be \(expectedFailureCount) failing sanity checks")
 
@@ -61,7 +61,7 @@ internal class SanityCheckTestCase: XCTestCase {
 
 internal extension SanityCheckTestCase {
 
-    override internal func recordFailureWithDescription(description: String!, inFile filePath: String!, atLine lineNumber: UInt, expected: Bool) {
+    override internal func recordFailureWithDescription(description: String, inFile filePath: String, atLine lineNumber: UInt, expected: Bool) {
         if lineNumberIsForSanityCheck(lineNumber) {
             recordSanityCheckFailureWithDescription(description, inFile: filePath, atLine: lineNumber, expected: expected)
         }
@@ -71,7 +71,7 @@ internal extension SanityCheckTestCase {
         }
     }
 
-    private func recordSanityCheckFailureWithDescription(description: String!, inFile filePath: String!, atLine lineNumber: UInt, expected: Bool) {
+    private func recordSanityCheckFailureWithDescription(description: String, inFile filePath: String, atLine lineNumber: UInt, expected: Bool) {
         let failure = SanityCheckFailure(description: description, filePath: filePath, lineNumber: lineNumber, expected: expected)
         sanityCheckFailures.append(failure)
     }

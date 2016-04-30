@@ -21,7 +21,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the leading edges of the views.
     */
-    public func CheckLeadingAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckLeadingAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
@@ -39,7 +39,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the trailing edges of the views.
     */
-    public func CheckTrailingAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckTrailingAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
@@ -57,7 +57,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the left edges of the views.
     */
-    public func CheckLeftAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckLeftAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
@@ -75,7 +75,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the right edges of the views.
     */
-    public func CheckRightAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckRightAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
@@ -93,7 +93,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the horizontal centers of the views.
     */
-    public func CheckHorizontalAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckHorizontalAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
@@ -111,7 +111,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the top edges of the views.
     */
-    public func CheckTopAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckTopAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
@@ -129,7 +129,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the bottom edges of the views.
     */
-    public func CheckBottomAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckBottomAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return
@@ -147,7 +147,7 @@ public extension XCTestCase {
       @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
       @discussion       This method will check to see if the first common ancestor of the provided views has an applied constraint that aligns the vertical centers of the views.
     */
-    public func CheckVerticalAlignment(view1: UIView, _ view2: UIView, var _ message: String! = nil, file: String = __FILE__, line: UInt = __LINE__) {
+    public func CheckVerticalAlignment(view1: UIView, _ view2: UIView, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         if !CheckViewsAreRelated(view1, view2, reportParameters: reportParameters) {
             return

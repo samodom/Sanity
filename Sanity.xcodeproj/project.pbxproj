@@ -16,26 +16,21 @@
 		0A3E95BF1AB60CE700AF2164 /* BadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95BE1AB60CE700AF2164 /* BadViewController.swift */; };
 		0A3E95C11AB60DFA00AF2164 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E95C01AB60DFA00AF2164 /* EmptyViewController.swift */; };
 		0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
-		0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37211A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
-		0A4B37221A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
 		0A4B37241A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */; };
-		0A4B37251A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */; };
+		0A6ECA561CD56A3400B8AD2C /* ViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6ECA541CD5694800B8AD2C /* ViewHierarchy.swift */; };
 		0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */; };
 		0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */; };
 		0A7000D01A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CF1A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift */; };
 		0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */; };
 		0A95FA221A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */; };
-		0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */; };
 		0A9EBBAB195F359100C62D38 /* Sanity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EBBAA195F359100C62D38 /* Sanity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9EBBA5195F359100C62D38 /* Sanity.framework */; };
 		0ACADADF1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADADE1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift */; };
-		0ACADAE01A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADADE1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift */; };
 		0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
-		0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
 		0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE35C561A30122100EC2419 /* XCTest.framework */; };
-		1AC8EEBFCD8602C241734F72 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB78ADDA074460E0253A9ECB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		76D2EE137D2D40FA11FC3819 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB78ADDA074460E0253A9ECB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1AC8EEBFCD8602C241734F72 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB78ADDA074460E0253A9ECB /* Pods.framework */; };
+		76D2EE137D2D40FA11FC3819 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB78ADDA074460E0253A9ECB /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +59,7 @@
 		0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutCommon.swift; sourceTree = "<group>"; };
 		0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailureReportParameters.swift; sourceTree = "<group>"; };
 		0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureReporting.swift; sourceTree = "<group>"; };
+		0A6ECA541CD5694800B8AD2C /* ViewHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHierarchy.swift; sourceTree = "<group>"; };
 		0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailure.swift; sourceTree = "<group>"; };
 		0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckTestCase.swift; sourceTree = "<group>"; };
 		0A7000CF1A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalAlignmentChecksTests.swift; sourceTree = "<group>"; };
@@ -175,6 +171,7 @@
 				0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */,
 				0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */,
 				0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */,
+				0A6ECA541CD5694800B8AD2C /* ViewHierarchy.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -308,7 +305,6 @@
 				0A9EBBA1195F359100C62D38 /* Frameworks */,
 				0A9EBBA2195F359100C62D38 /* Headers */,
 				0A9EBBA3195F359100C62D38 /* Resources */,
-				02D0F217348ECE3D0AD55031 /* Embed Pods Frameworks */,
 				E42681AFB06D630063A47901 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -347,7 +343,8 @@
 		0A9EBB9C195F359100C62D38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Sam Odom";
 				TargetAttributes = {
 					0A3E95991AB60C5800AF2164 = {
@@ -410,21 +407,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02D0F217348ECE3D0AD55031 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		214CA9A5DE1AF2E694E23D9E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6ECA561CD56A3400B8AD2C /* ViewHierarchy.swift in Sources */,
 				0A4B37241A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
 				0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */,
 				0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */,
@@ -532,16 +515,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */,
-				0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */,
-				0A4B37251A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
 				0A7000D01A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift in Sources */,
-				0A4B37221A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */,
-				0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */,
-				0ACADAE01A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */,
 				0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */,
 				0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */,
 				0A17930C1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift in Sources */,
-				0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +566,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samodom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -604,6 +582,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samodom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -629,6 +608,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -702,14 +682,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Sanity/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samodom.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -725,14 +704,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Sanity/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samodom.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -743,18 +721,13 @@
 			baseConfigurationReference = B7B50BAA491B617232FFB11B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = SanityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samodom.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -765,14 +738,9 @@
 			baseConfigurationReference = B2B9EF51E256307D912B23DB /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = SanityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samodom.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -787,6 +755,7 @@
 				0A3E95B71AB60C5800AF2164 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A9EBB9F195F359100C62D38 /* Build configuration list for PBXProject "Sanity" */ = {
 			isa = XCConfigurationList;
