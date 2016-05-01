@@ -12,41 +12,50 @@ import UIKitSwagger
 public extension XCTestCase {
 
     /**
-      Sanity Check: Is my view constrained to be square?
-      @param            view View to check for square aspect ratio constraint.
-      @param            message (Optional) Custom message to report with test failure.  Suitable default provided.
-      @param            file (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
-      @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
-      @discussion       This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to be equal.
-    */
+     ***Sanity Check:*** Is my view constrained to be square?
+     
+     This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to be equal.
+
+     - Parameters:
+       - view: View to check for square aspect ratio constraint.
+       - message: (Optional) Custom message to report with test failure.  Suitable default provided.
+       - file: (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
+       - line: (Optional) Custom line number to report with test failure.  Calling line number used by default.
+     */
     public func CheckConstrainedToSquare(view: UIView, _ message: String = DefaultCheckSquareConstraintMessage, file: String = #file, line: UInt = #line) {
         let reportParameters = SanityCheckFailureReportParameters(message, file, line)
         CheckWidthToHeightConstraint(view, widthToHeightRatio: 1, widthToHeightOffset: 0, reportParameters: reportParameters)
     }
 
     /**
-      Sanity Check: Is my view constrained to a particular aspect ratio?
-      @param            view View to check for aspect ratio constraint.
-      @param            ratio Expected width-to-height ratio.
-      @param            message (Optional) Custom message to report with test failure.  Suitable default provided.
-      @param            file (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
-      @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
-      @discussion       This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to the specified width-to-height ratio.
-    */
+     ***Sanity Check:*** Is my view constrained to a particular aspect ratio?
+     
+     This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to the specified width-to-height ratio.
+     
+     - Parameters:
+       - view: View to check for aspect ratio constraint.
+       - ratio: Expected width-to-height ratio.
+       - message: (Optional) Custom message to report with test failure.  Suitable default provided.
+       - file: (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
+       - line: (Optional) Custom line number to report with test failure.  Calling line number used by default.
+     */
     public func CheckConstrainedToAspectRatio(view: UIView, ratio widthToHeightRatio: CGFloat = 1, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         CheckConstrainedToAspectRatio(view, ratio: widthToHeightRatio, offset: 0, message, file: file, line: line)
     }
 
     /**
-      Sanity Check: Is my view constrained to a particular aspect ratio plus an offset?  Is its width a constant amount greater or lesser than its height?
-      @param            view View to check for aspect ratio constraint.
-      @param            ratio Expected width-to-height ratio.
-      @param            offset Expected offset to the constrained aspect ratio.
-      @param            message (Optional) Custom message to report with test failure.  Suitable default provided.
-      @param            file (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
-      @param            line (Optional) Custom line number to report with test failure.  Calling line number used by default.
-      @discussion       This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to the specified width-to-height ratio plus a constant offset.
-    */
+     ***Sanity Check:*** Is my view constrained to a particular aspect ratio plus an offset?  Is its width a constant amount greater or lesser than its height?
+     
+     This method will check to see if the provided view has an applied constraint that constrains the dimensions of the view to the specified width-to-height ratio plus a constant offset.
+     
+     - Parameters:
+       - view: View to check for aspect ratio constraint.
+       - ratio: Expected width-to-height ratio.
+       - offset: Expected offset to the constrained aspect ratio.
+       - message: (Optional) Custom message to report with test failure.  Suitable default provided.
+       - file: (Optional) Custom file path to report with test failure.  File path of calling test file used by default.
+       - line: (Optional) Custom line number to report with test failure.  Calling line number used by default.
+     */
     public func CheckConstrainedToAspectRatio(view: UIView, ratio widthToHeightRatio: CGFloat = 1, offset widthToHeightOffset: CGFloat, _ message: String! = nil, file: String = #file, line: UInt = #line) {
         let messageToUse = message ??
             defaultCheckAspectRatioConstraintMessage(ratio: widthToHeightRatio, offset: widthToHeightOffset)

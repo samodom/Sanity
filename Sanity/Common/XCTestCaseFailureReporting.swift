@@ -11,8 +11,12 @@ import XCTest
 internal extension XCTestCase {
 
     internal func recordSanityCheckFailure(parameters: SanityCheckFailureReportParameters) {
-        assert(parameters.message != nil, "The sanity check has not provided a failure message")
-        recordFailureWithDescription(parameters.message!, inFile: parameters.filePath, atLine: parameters.lineNumber, expected: true)
+        recordFailureWithDescription(
+            parameters.message,
+            inFile: parameters.filePath,
+            atLine: parameters.lineNumber,
+            expected: true
+        )
     }
 
 }
