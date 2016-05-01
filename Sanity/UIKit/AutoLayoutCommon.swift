@@ -34,14 +34,14 @@ internal extension XCTestCase {
         let ancestor = view1.firstCommonAncestor(view2)!
         let expectedConstraint = item1 =* item2
         if !ancestor.hasConstraint(expectedConstraint) {
-            reportParameters.message = reportParameters.message ?? defaultCheckAlignmentConstraintMessageWithAttribute(item1.attribute)
+            reportParameters.message = reportParameters.message ?? DefaultCheckAlignmentConstraintMessageWithAttribute(item1.attribute)
             recordSanityCheckFailure(reportParameters)
         }
     }
 
 }
 
-private func defaultCheckAlignmentConstraintMessageWithAttribute(attribute: NSLayoutAttribute) -> String {
+private func DefaultCheckAlignmentConstraintMessageWithAttribute(attribute: NSLayoutAttribute) -> String {
     let attributeName = MessageNamesForAttributes[attribute]
     assert(attributeName != nil, "There should be a message name defined for the layout attribute")
     return DefaultCheckAlignmentConstraintMessageTokens.startToken + attributeName! + DefaultCheckAlignmentConstraintMessageTokens.endToken
