@@ -13,8 +13,8 @@ class HorizontalAlignmentChecksTests: SanityCheckTestCase {
 
     let superview = UIView()
     let anchorView = UIView()
-    let subview1 = UIView()
-    let subview2 = UIView()
+    let subview1 = UIImageView()
+    let subview2 = UIButton()
     let unrelated = UIView()
     var allConstraints: [Constraint]!
 
