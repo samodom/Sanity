@@ -17,6 +17,7 @@
 		0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */; };
 		0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */; };
 		0A7000D01A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CF1A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift */; };
+		0A7000CE1A3821590022E9AB /* ObjectAssociationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE86041A36837500C52264 /* ObjectAssociationTests.swift */; };
 		0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */; };
 		0A95FA221A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */; };
 		0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */; };
@@ -29,6 +30,8 @@
 		0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
 		0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
 		0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE35C561A30122100EC2419 /* XCTest.framework */; };
+		0AEE860B1A36867100C52264 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE860A1A36867100C52264 /* ObjectAssociation.swift */; };
+		0AEE860C1A36867100C52264 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE860A1A36867100C52264 /* ObjectAssociation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,8 @@
 		0ACADADE1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutAlignmentChecks.swift; sourceTree = "<group>"; };
 		0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFailureStrings.swift; sourceTree = "<group>"; };
 		0AE35C561A30122100EC2419 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCTest.framework; sourceTree = "<group>"; };
+		0AEE86041A36837500C52264 /* ObjectAssociationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociationTests.swift; sourceTree = "<group>"; };
+		0AEE860A1A36867100C52264 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,7 @@
 				0A4B371F1A415C0E0088CD58 /* Common */,
 				0A9EBBAA195F359100C62D38 /* Sanity.h */,
 				0A9EBBA8195F359100C62D38 /* Supporting Files */,
+				0AEE86091A36866000C52264 /* Tools */,
 				0A95FA1B1A301C1A00B8FDEF /* UIKit */,
 			);
 			path = Sanity;
@@ -174,6 +180,14 @@
 			children = (
 				0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */,
 				0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0AEE86091A36866000C52264 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0AEE860A1A36867100C52264 /* ObjectAssociation.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -287,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4B37241A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
+				0AEE860B1A36867100C52264 /* ObjectAssociation.swift in Sources */,
 				0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */,
 				0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */,
 				0ACADADF1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */,
@@ -299,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7000CE1A3821590022E9AB /* ObjectAssociationTests.swift in Sources */,
 				0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */,
 				0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */,
 				0A4B37251A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
@@ -307,6 +323,7 @@
 				0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */,
 				0ACADAE01A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */,
 				0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */,
+				0AEE860C1A36867100C52264 /* ObjectAssociation.swift in Sources */,
 				0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */,
 				0A17930C1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift in Sources */,
 				0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */,
