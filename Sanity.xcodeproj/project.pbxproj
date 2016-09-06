@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */; };
 		0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */; };
+		0A7000CE1A3821590022E9AB /* ObjectAssociationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE86041A36837500C52264 /* ObjectAssociationTests.swift */; };
 		0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */; };
 		0A95FA221A3110C500B8FDEF /* AutoLayoutChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutChecks.swift */; };
 		0A95FA231A3110C500B8FDEF /* AutoLayoutChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutChecks.swift */; };
@@ -19,6 +20,8 @@
 		0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
 		0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
 		0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE35C561A30122100EC2419 /* XCTest.framework */; };
+		0AEE860B1A36867100C52264 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE860A1A36867100C52264 /* ObjectAssociation.swift */; };
+		0AEE860C1A36867100C52264 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE860A1A36867100C52264 /* ObjectAssociation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0A9EBBA4195F359100C62D38;
 			remoteInfo = Sanity;
+		};
+		0AD6F26E1A352B1C00D863A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AD6F2681A352B1C00D863A2 /* UIKitSwagger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A3BB97919EB70C70075B32A;
+			remoteInfo = UIKitSwagger;
+		};
+		0AD6F2701A352B1C00D863A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AD6F2681A352B1C00D863A2 /* UIKitSwagger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A3BB98419EB70C70075B32A;
+			remoteInfo = UIKitSwaggerTests;
+		};
+		0AD6F2721A352B1C00D863A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AD6F2681A352B1C00D863A2 /* UIKitSwagger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AC4A8B21A27E05600EBCCB8;
+			remoteInfo = TestingDummy;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,8 +65,11 @@
 		0A9EBBAA195F359100C62D38 /* Sanity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sanity.h; sourceTree = "<group>"; };
 		0A9EBBB0195F359100C62D38 /* SanityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9EBBB6195F359100C62D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD6F2681A352B1C00D863A2 /* UIKitSwagger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKitSwagger.xcodeproj; path = ../UIKitSwagger/UIKitSwagger.xcodeproj; sourceTree = "<group>"; };
 		0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitFailureStrings.swift; sourceTree = "<group>"; };
 		0AE35C561A30122100EC2419 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCTest.framework; sourceTree = "<group>"; };
+		0AEE86041A36837500C52264 /* ObjectAssociationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociationTests.swift; sourceTree = "<group>"; };
+		0AEE860A1A36867100C52264 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +106,7 @@
 		0A9EBB9B195F359100C62D38 = {
 			isa = PBXGroup;
 			children = (
+				0AD6F2681A352B1C00D863A2 /* UIKitSwagger.xcodeproj */,
 				0A9EBBA6195F359100C62D38 /* Products */,
 				0A9EBBA7195F359100C62D38 /* Sanity */,
 				0A9EBBB4195F359100C62D38 /* SanityTests */,
@@ -100,6 +128,7 @@
 			children = (
 				0A9EBBAA195F359100C62D38 /* Sanity.h */,
 				0A9EBBA8195F359100C62D38 /* Supporting Files */,
+				0AEE86091A36866000C52264 /* Tools */,
 				0A95FA1B1A301C1A00B8FDEF /* UIKit */,
 			);
 			path = Sanity;
@@ -131,6 +160,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0AD6F2691A352B1C00D863A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */,
+				0AD6F2711A352B1C00D863A2 /* UIKitSwaggerTests.xctest */,
+				0AD6F2731A352B1C00D863A2 /* TestingDummy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0AE35C4F1A2FDBEB00EC2419 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +184,14 @@
 			children = (
 				0A7000CA1A380D910022E9AB /* SanityCheckFailure.swift */,
 				0A7000CB1A380D910022E9AB /* SanityCheckTestCase.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0AEE86091A36866000C52264 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0AEE860A1A36867100C52264 /* ObjectAssociation.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -227,6 +274,12 @@
 			mainGroup = 0A9EBB9B195F359100C62D38;
 			productRefGroup = 0A9EBBA6195F359100C62D38 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0AD6F2691A352B1C00D863A2 /* Products */;
+					ProjectRef = 0AD6F2681A352B1C00D863A2 /* UIKitSwagger.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0A9EBBA4195F359100C62D38 /* Sanity */,
@@ -234,6 +287,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKitSwagger.framework;
+			remoteRef = 0AD6F26E1A352B1C00D863A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0AD6F2711A352B1C00D863A2 /* UIKitSwaggerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIKitSwaggerTests.xctest;
+			remoteRef = 0AD6F2701A352B1C00D863A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0AD6F2731A352B1C00D863A2 /* TestingDummy.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestingDummy.app;
+			remoteRef = 0AD6F2721A352B1C00D863A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A9EBBA3195F359100C62D38 /* Resources */ = {
@@ -257,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEE860B1A36867100C52264 /* ObjectAssociation.swift in Sources */,
 				0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */,
 				0A95FA221A3110C500B8FDEF /* AutoLayoutChecks.swift in Sources */,
 			);
@@ -266,9 +344,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7000CE1A3821590022E9AB /* ObjectAssociationTests.swift in Sources */,
 				0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */,
 				0A95FA231A3110C500B8FDEF /* AutoLayoutChecks.swift in Sources */,
 				0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */,
+				0AEE860C1A36867100C52264 /* ObjectAssociation.swift in Sources */,
 				0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */,
 				0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */,
 			);
