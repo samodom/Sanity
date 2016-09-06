@@ -1,0 +1,6 @@
+framework module UIKitSwagger {
+  umbrella header "UIKitSwagger-umbrella.h"
+
+  export *
+  module * { export * }
+}

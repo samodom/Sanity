@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F8FE5070A09117861EC6B832877F7D9F5F8D7A70",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E471B260E4BF640F88242B28112C8BC45807D95F" : 0,
+    "F8FE5070A09117861EC6B832877F7D9F5F8D7A70" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1C7B27D0-F371-4DBE-9C62-80B73966300D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E471B260E4BF640F88242B28112C8BC45807D95F" : "TestableUIKit",
+    "F8FE5070A09117861EC6B832877F7D9F5F8D7A70" : "Sanity"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Sanity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Sanity.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/samodom\/TestableUIKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E471B260E4BF640F88242B28112C8BC45807D95F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/samodom\/Sanity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F8FE5070A09117861EC6B832877F7D9F5F8D7A70"
+    }
+  ]
+}

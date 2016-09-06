@@ -1,0 +1,10 @@
+PODS:
+  - UIKitSwagger (0.7.0)
+
+DEPENDENCIES:
+  - UIKitSwagger
+
+SPEC CHECKSUMS:
+  UIKitSwagger: 20bbe3bbb863304dd0e674a1c597422e265d18b7
+
+COCOAPODS: 0.39.0

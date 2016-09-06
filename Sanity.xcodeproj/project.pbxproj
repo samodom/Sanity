@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0A17930C1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17930B1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift */; };
+		0A4794171A509A37007AE207 /* ViewControllerSuperclassChecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4794161A509A37007AE207 /* ViewControllerSuperclassChecksTests.swift */; };
+		0A4794251A50A064007AE207 /* UIViewControllerCallChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4794241A50A064007AE207 /* UIViewControllerCallChecks.swift */; };
+		0A4794261A50A064007AE207 /* UIViewControllerCallChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4794241A50A064007AE207 /* UIViewControllerCallChecks.swift */; };
+		0A4794301A5125F9007AE207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47942F1A5125F9007AE207 /* AppDelegate.swift */; };
+		0A4794351A5125F9007AE207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4794331A5125F9007AE207 /* Main.storyboard */; };
+		0A4794371A5125F9007AE207 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4794361A5125F9007AE207 /* Images.xcassets */; };
+		0A47943A1A5125F9007AE207 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4794381A5125F9007AE207 /* LaunchScreen.xib */; };
+		0A4794501A512661007AE207 /* BadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47944D1A512661007AE207 /* BadViewController.swift */; };
+		0A4794511A512661007AE207 /* BadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47944D1A512661007AE207 /* BadViewController.swift */; };
+		0A4794521A512661007AE207 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47944E1A512661007AE207 /* EmptyViewController.swift */; };
+		0A4794531A512661007AE207 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47944E1A512661007AE207 /* EmptyViewController.swift */; };
+		0A4794541A512661007AE207 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47944F1A512661007AE207 /* GoodViewController.swift */; };
+		0A4794551A512661007AE207 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47944F1A512661007AE207 /* GoodViewController.swift */; };
 		0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */; };
 		0A4B37211A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */; };
@@ -22,8 +35,6 @@
 		0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */; };
 		0A9EBBAB195F359100C62D38 /* Sanity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9EBBAA195F359100C62D38 /* Sanity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9EBBA5195F359100C62D38 /* Sanity.framework */; };
-		0AD6F2741A352B2200D863A2 /* UIKitSwagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */; };
-		0AD6F2751A352B2600D863A2 /* UIKitSwagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD6F26F1A352B1C00D863A2 /* UIKitSwagger.framework */; };
 		0ACADADF1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADADE1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift */; };
 		0ACADAE01A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADADE1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift */; };
 		0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */; };
@@ -43,6 +54,17 @@
 
 /* Begin PBXFileReference section */
 		0A17930B1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentChecksTests.swift; sourceTree = "<group>"; };
+		0A4794161A509A37007AE207 /* ViewControllerSuperclassChecksTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSuperclassChecksTests.swift; sourceTree = "<group>"; };
+		0A4794241A50A064007AE207 /* UIViewControllerCallChecks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerCallChecks.swift; sourceTree = "<group>"; };
+		0A47942B1A5125F8007AE207 /* TestableApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestableApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A47942E1A5125F9007AE207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A47942F1A5125F9007AE207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A4794341A5125F9007AE207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A4794361A5125F9007AE207 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A4794391A5125F9007AE207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0A47944D1A512661007AE207 /* BadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadViewController.swift; sourceTree = "<group>"; };
+		0A47944E1A512661007AE207 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		0A47944F1A512661007AE207 /* GoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
 		0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutCommon.swift; sourceTree = "<group>"; };
 		0A4B37201A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanityCheckFailureReportParameters.swift; sourceTree = "<group>"; };
 		0A4B37231A415CB00088CD58 /* XCTestCaseFailureReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseFailureReporting.swift; sourceTree = "<group>"; };
@@ -62,11 +84,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A4794281A5125F8007AE207 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A9EBBA1195F359100C62D38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD6F2741A352B2200D863A2 /* UIKitSwagger.framework in Frameworks */,
 				0AE35C571A30122100EC2419 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD6F2751A352B2600D863A2 /* UIKitSwagger.framework in Frameworks */,
 				0A9EBBB1195F359100C62D38 /* Sanity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +110,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A47942C1A5125F9007AE207 /* TestableApp */ = {
+			isa = PBXGroup;
+			children = (
+				0A47942F1A5125F9007AE207 /* AppDelegate.swift */,
+				0A47944D1A512661007AE207 /* BadViewController.swift */,
+				0A47944E1A512661007AE207 /* EmptyViewController.swift */,
+				0A47944F1A512661007AE207 /* GoodViewController.swift */,
+				0A4794361A5125F9007AE207 /* Images.xcassets */,
+				0A4794381A5125F9007AE207 /* LaunchScreen.xib */,
+				0A4794331A5125F9007AE207 /* Main.storyboard */,
+				0A47942D1A5125F9007AE207 /* Supporting Files */,
+			);
+			path = TestableApp;
+			sourceTree = "<group>";
+		};
+		0A47942D1A5125F9007AE207 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A47942E1A5125F9007AE207 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0A4B371F1A415C0E0088CD58 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +149,7 @@
 				0A95FA211A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift */,
 				0A4B37021A4149CC0088CD58 /* AutoLayoutCommon.swift */,
 				0AD6F2761A352D6200D863A2 /* UIKitFailureStrings.swift */,
+				0A4794241A50A064007AE207 /* UIViewControllerCallChecks.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -106,6 +157,7 @@
 		0A9EBB9B195F359100C62D38 = {
 			isa = PBXGroup;
 			children = (
+				0A47942C1A5125F9007AE207 /* TestableApp */,
 				0A9EBBA6195F359100C62D38 /* Products */,
 				0A9EBBA7195F359100C62D38 /* Sanity */,
 				0A9EBBB4195F359100C62D38 /* SanityTests */,
@@ -118,6 +170,7 @@
 			children = (
 				0A9EBBA5195F359100C62D38 /* Sanity.framework */,
 				0A9EBBB0195F359100C62D38 /* SanityTests.xctest */,
+				0A47942B1A5125F8007AE207 /* TestableApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +218,7 @@
 				0A95FA1C1A301C7A00B8FDEF /* AspectRatioChecksTests.swift */,
 				0A7000CF1A3A723B0022E9AB /* HorizontalAlignmentChecksTests.swift */,
 				0A17930B1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift */,
+				0A4794161A509A37007AE207 /* ViewControllerSuperclassChecksTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -192,6 +246,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0A47942A1A5125F8007AE207 /* TestableApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4794471A5125F9007AE207 /* Build configuration list for PBXNativeTarget "TestableApp" */;
+			buildPhases = (
+				0A4794271A5125F8007AE207 /* Sources */,
+				0A4794281A5125F8007AE207 /* Frameworks */,
+				0A4794291A5125F8007AE207 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestableApp;
+			productName = TestableApp;
+			productReference = 0A47942B1A5125F8007AE207 /* TestableApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0A9EBBA4195F359100C62D38 /* Sanity */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A9EBBBB195F359100C62D38 /* Build configuration list for PBXNativeTarget "Sanity" */;
@@ -237,6 +308,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Sam Odom";
 				TargetAttributes = {
+					0A47942A1A5125F8007AE207 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					0A9EBBA4195F359100C62D38 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -252,6 +326,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0A9EBB9B195F359100C62D38;
 			productRefGroup = 0A9EBBA6195F359100C62D38 /* Products */;
@@ -260,11 +335,22 @@
 			targets = (
 				0A9EBBA4195F359100C62D38 /* Sanity */,
 				0A9EBBAF195F359100C62D38 /* SanityTests */,
+				0A47942A1A5125F8007AE207 /* TestableApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A4794291A5125F8007AE207 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4794351A5125F9007AE207 /* Main.storyboard in Resources */,
+				0A47943A1A5125F9007AE207 /* LaunchScreen.xib in Resources */,
+				0A4794371A5125F9007AE207 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A9EBBA3195F359100C62D38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,11 +368,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A4794271A5125F8007AE207 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4794531A512661007AE207 /* EmptyViewController.swift in Sources */,
+				0A4794511A512661007AE207 /* BadViewController.swift in Sources */,
+				0A4794301A5125F9007AE207 /* AppDelegate.swift in Sources */,
+				0A4794551A512661007AE207 /* GoodViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A9EBBA0195F359100C62D38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0A4B37241A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
+				0A4794251A50A064007AE207 /* UIViewControllerCallChecks.swift in Sources */,
 				0AD6F2771A352D6200D863A2 /* UIKitFailureStrings.swift in Sources */,
 				0A4B37031A4149CC0088CD58 /* AutoLayoutCommon.swift in Sources */,
 				0ACADADF1A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */,
@@ -299,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4794171A509A37007AE207 /* ViewControllerSuperclassChecksTests.swift in Sources */,
 				0A7000CD1A380D910022E9AB /* SanityCheckTestCase.swift in Sources */,
 				0A4B37041A4153EF0088CD58 /* AutoLayoutCommon.swift in Sources */,
 				0A4B37251A415CB00088CD58 /* XCTestCaseFailureReporting.swift in Sources */,
@@ -306,8 +405,12 @@
 				0A4B37221A415C3A0088CD58 /* SanityCheckFailureReportParameters.swift in Sources */,
 				0A95FA231A3110C500B8FDEF /* AutoLayoutAspectRatioChecks.swift in Sources */,
 				0ACADAE01A3A831000CF49F8 /* AutoLayoutAlignmentChecks.swift in Sources */,
+				0A4794501A512661007AE207 /* BadViewController.swift in Sources */,
 				0A95FA1D1A301C7A00B8FDEF /* AspectRatioChecksTests.swift in Sources */,
+				0A4794261A50A064007AE207 /* UIViewControllerCallChecks.swift in Sources */,
+				0A4794541A512661007AE207 /* GoodViewController.swift in Sources */,
 				0A7000CC1A380D910022E9AB /* SanityCheckFailure.swift in Sources */,
+				0A4794521A512661007AE207 /* EmptyViewController.swift in Sources */,
 				0A17930C1A42953200E2CDD0 /* VerticalAlignmentChecksTests.swift in Sources */,
 				0AD6F2781A352DB800D863A2 /* UIKitFailureStrings.swift in Sources */,
 			);
@@ -323,7 +426,55 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		0A4794331A5125F9007AE207 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A4794341A5125F9007AE207 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A4794381A5125F9007AE207 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A4794391A5125F9007AE207 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		0A4794481A5125F9007AE207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestableApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A4794491A5125F9007AE207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = TestableApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0A9EBBB9195F359100C62D38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -492,6 +643,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A4794471A5125F9007AE207 /* Build configuration list for PBXNativeTarget "TestableApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4794481A5125F9007AE207 /* Debug */,
+				0A4794491A5125F9007AE207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0A9EBB9F195F359100C62D38 /* Build configuration list for PBXProject "Sanity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

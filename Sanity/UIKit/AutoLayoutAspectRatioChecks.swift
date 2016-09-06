@@ -57,31 +57,6 @@ public extension XCTestCase {
         CheckWidthToHeightConstraint(view, widthToHeightRatio: widthToHeightRatio, widthToHeightOffset: widthToHeightOffset, reportParameters: reportParameters)
     }
 
-}
-
-
-////////////////////////////////////////////////////////////////////////////////
-
-private extension XCTestCase {
-
-    private func defaultCheckAspectRatioConstraintMessage(#ratio: CGFloat, offset: CGFloat) -> String {
-        let tokens = DefaultCheckAspectRatioConstraintMessageTokens
-        var message = tokens.startToken
-
-        if ratio == 1 {
-            message += tokens.equalToken
-        }
-        else {
-            message += "\(ratio)" + tokens.multipleToken
-        }
-
-        if offset != 0 {
-            message += tokens.offsetToken + "\(offset)" + tokens.endToken
-        }
-
-        return message
-    }
-
     private func CheckWidthToHeightConstraint(view: UIView, widthToHeightRatio: CGFloat, widthToHeightOffset: CGFloat, reportParameters: SanityCheckFailureReportParameters) {
         let constraint = view.width =* widthToHeightRatio * view.height + widthToHeightOffset
         if !view.hasConstraint(constraint) {
@@ -90,3 +65,22 @@ private extension XCTestCase {
     }
 
 }
+
+private func defaultCheckAspectRatioConstraintMessage(#ratio: CGFloat, #offset: CGFloat) -> String {
+    let tokens = DefaultCheckAspectRatioConstraintMessageTokens
+    var message = tokens.startToken
+
+    if ratio == 1 {
+        message += tokens.equalToken
+    }
+    else {
+        message += "\(ratio)" + tokens.multipleToken
+    }
+
+    if offset != 0 {
+        message += tokens.offsetToken + "\(offset)" + tokens.endToken
+    }
+
+    return message
+}
+
