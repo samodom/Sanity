@@ -1,5 +1,4 @@
-Sanity
-======
+# Sanity - DEPRECATED
 
 Swift-based testing tools for iOS
 
